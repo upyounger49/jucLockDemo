@@ -2,6 +2,10 @@ package com.atguigu.huawei.test;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * 缓存一致性 为了降低不同对象在同一缓存行的概率 扩大每个对象的大小为64bytes
+ * 减少缓存一致性的同步时间 使效率提高
+ */
 public class CacheLinePadding {
 
     private static T[] arr = new T[2];
